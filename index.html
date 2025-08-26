@@ -8,17 +8,21 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
- <nav class="flex justify-between mx-[60px] mt-[30px]">
-    <div class="flex items-center">
+ <nav class="flex shadow justify-between ">
+    <div class="flex items-center gap-5 p-6">
         <img class="w-[50px]" src="./assets/logo.png" alt="">
-        <p>Emergency <br> Service</p>
+        <p class="text-[#006747] w-[134px] h-[44px] font-bold">Emergency <br> Service</p>
     </div>
-    <div class="flex items-center gap-5">
-        <p>0</p>
+    <div class="flex items-center gap-5 p-6">
+        <div class="flex items-center bg-[#EDFFF1] w-[123px] h-[52px] rounded-[36px] gap-3 p-7">
+            <p>0</p>
         <img class="w-[30px]" src="./assets/heart.png" alt="">
-        <p class="w-[32px]">100</p>
-        <img class="w-[24px]" src="./assets/coin.png" alt="">
-        <button>2 Copy</button>
+        </div>
+       <div class="flex items-center gap-3 p-5 bg-[#EDFFF1] rounded-[36px] w-[106px] h-[52px]">
+         <p class="w-[32px]">100</p>
+        <img class="w-[23px] h-[23px]" src="./assets/coin.png" alt="">
+       </div>
+        <button class="bg-[#00A63E] w-[106px] h-[52px] rounded-[36px] text-white">2 Copy</button>
     </div>
  </nav>
 </body>
