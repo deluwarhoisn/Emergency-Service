@@ -25,9 +25,9 @@
         <img class="w-[50px]" src="./assets/logo.png" alt="">
         <p class="text-[#006747] w-[134px] h-[44px] font-bold">Emergency <br> Service</p>
     </div>
-    <div class="flex items-center gap-5 p-6">
-        <div class="flex items-center bg-[#EDFFF1] w-[123px] h-[52px] rounded-[36px] gap-3 p-7">
-            <p>0</p>
+    <div class="lg:flex flex gap-4 items-center lg:gap-5 lg:p-6">
+        <div class="flex  items-center bg-[#EDFFF1] w-[123px] h-[52px] rounded-[36px] gap-3 p-7">
+            <p id="counter">0</p>
         <img id="" class="w-[30px]" src="./assets/heart.png" alt="">
         </div>
        <div class="flex items-center gap-3 p-5 bg-[#EDFFF1] rounded-[36px] w-[106px] h-[52px]">
@@ -39,23 +39,23 @@
  </nav>
  <!-- banner section -->
   <section class="hindlight">
-    <div class="h-[234px] bg-gradient-to-r from-[#013223] from-10% via-[#006747] via-50% to-[#013223] to-100% ... lg:flex flex-col flex items-center gap-2 p-3">
+    <div class="h-[234px] bg-gradient-to-r from-[#013223] from-10% via-[#006747] via-50% to-[#013223] to-100% ... lg:flex lg:flex-col flex items-center gap-2 p-3">
         <img class="w-[92px] " src="./assets/logo-dark.png" alt="">
-        <p class="font-semibold h-[55px] text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</p>
-        <p class="text-white font-semibold text-[20px]">An easy-to-use emergency service system for citizens under the supervision of the Government of the People's Republic of Bangladesh</p>
+        <p class="font-semibold h-[55px]  lg:text-[40px] text-[20px] text-white">জরুরি সেবা ডিরেক্টরি</p>
+        <p class="text-white font-semibold lg:text-[20px]">An easy-to-use emergency service system for citizens under the supervision of the Government of the People's Republic of Bangladesh</p>
     </div>
   </section>
   <!-- card and side section -->
   <main class="hindlight bg-[#F5FFF6]">
-    <div class=" h-[1140px] border-2 lg:grid lg:grid-cols-5  p-6">
-      <div class=" bg-[#F5FFF6] card-section  lg:col-span-4 col-span-1 p-3">
-       <div class="gap-4 lg:grid lg:grid-cols-3">
-         <div class="shadow rounded-2xl w-full h-[336px] bg-[#FFFFFF] p-8">
+    <div class=" h-[1140px] border-2 lg:grid lg:grid-cols-5  lg:p-6">
+      <div class=" bg-[#F5FFF6] lg:col-span-4  lg:p-3">
+       <div class="lg:gap-4 gap-2 lg:grid lg:grid-cols-3">
+         <div class="shadow rounded-2xl w-full h-[336px] bg-[#FFFFFF] p-8  ">
             <div class="flex justify-between items-center ">
                 <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                     <img class="w-[32px] h-32px" src="./assets/emergency.png" alt="">
                 </div>
-                <i id="" class="fa-regular fa-heart "></i>
+                <i id="" class="clicker fa-regular fa-heart "></i>
             </div>
             <div class="">
                 <div class="py-3">
@@ -75,7 +75,7 @@
                 <div class="bg-[#DFEFFF] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                     <img class="w-[32px] h-32px" src="./assets/police.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart "></i>
+                <i id="" class="clicker fa-regular fa-heart "></i>
             </div>
             <div class="">
                 <div class="py-3">
@@ -95,7 +95,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                     <img class="w-[32px] h-32px" src="./assets/fire-service.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart "></i>
+                <i id="" class="clicker fa-regular fa-heart "></i>
             </div>
             <div class="">
                 <div class="py-3">
@@ -119,7 +119,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                     <img class="w-[32px] h-32px" src="./assets/ambulance.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart "></i>
+                <i class="clicker fa-regular fa-heart "></i>
             </div>
             <div class="">
                 <div class="py-3">
@@ -139,7 +139,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                     <img class="w-[32px] h-32px" src="./assets/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart "></i>
+                <i class="clicker fa-regular fa-heart "></i>
             </div>
             <div class="">
                 <div class="py-3">
@@ -159,7 +159,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                     <img class="w-[32px] h-32px" src="./assets/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart "></i>
+                <i class="clicker fa-regular fa-heart "></i>
             </div>
             <div class="">
                 <div class="py-3">
@@ -246,7 +246,7 @@
       <aside class="side-div col-span-1 bg-[#FFFFFF] rounded-[16px] ">
         <div class="p-2 lg:flex justify-between items-center">
             <button class="text-[20px] font-bold"><i class="fa-regular fa-clock"></i> Call History</button>
-            <button class="font-bold  w-[114px] h-[52px] rounded-[50px] bg-[#00A63E] text-white pt-2">Clear</button>
+            <button class="font-bold  lg:w-[114px] w-[182px] h-[40px] lg:h-[52px] rounded-[50px] bg-[#00A63E] text-white pt-2">Clear</button>
         </div>
         <div class="list">
             

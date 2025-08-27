@@ -1,9 +1,11 @@
+
+
 function emergencyCall(id){
     alert('জাতীয় জরুরি সেবা ' + id + ' ');
 }
 
 document.getElementById('emergency-call').addEventListener('click',function(){
-    emergencyCall('999');
+    emergencyCall('জাতীয় জরুরি সেবা ,999');
 })
 
 document.getElementById('police-call').addEventListener('click',function(){
@@ -32,4 +34,15 @@ document.getElementById('Brac').addEventListener('click',function(){
 })
 document.getElementById('Bangladesh-Railway').addEventListener('click',function(){
     alert('বাংলাদেশ রেলওয়ে,163')
+})
+
+
+let count = 0;
+const buttons = document.querySelectorAll('.clicker');
+const counter = document.getElementById('counter');
+buttons.forEach(button =>{
+    button.addEventListener('click',function(){
+        count++;
+        counter.innerText = count;
+    })
 })
