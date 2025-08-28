@@ -1,6 +1,6 @@
 let coins = 100; 
 let counter = 0; 
-let copyCount = 2;
+let copyCount = 0;
 
 function updateCoinDisplay() {
     const coinDisplay = document.querySelector('.flex.items-center.gap-3.p-5 p');
