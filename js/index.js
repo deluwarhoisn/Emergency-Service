@@ -43,7 +43,7 @@ function makeCall(serviceName, phoneNumber) {
 function addToCallHistory(serviceName, phoneNumber) {
     const historyList = document.querySelector('.list');
     const historyItem = document.createElement('div');
-    historyItem.className = 'p-3 border-b border-gray-200 flex gap-5';
+    historyItem.className = 'p-3 border-b border-gray-200 flex justify-between items-center gap-5';
 
     const currentTime = new Date().toLocaleTimeString('bn-BD', {
 
@@ -52,8 +52,8 @@ function addToCallHistory(serviceName, phoneNumber) {
     });
     
     historyItem.innerHTML = `
-        <div class="text-sm font-semibold">${serviceName}</div>
-        <div class="text-xs text-gray-500">${phoneNumber}</div>
+       <div class="" > <div class="text-sm font-semibold">${serviceName}</div>
+        <div class="mt-3 px-2 text-[18px] text-xs text-gray-500">${phoneNumber}</div></div>
         <div class="text-xs text-gray-400">${currentTime}</div>
     `;
     
@@ -109,15 +109,15 @@ function copyToClipboard(serviceName, phoneNumber) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    document.getElementById('emergency-call').addEventListener('click', () => makeCall('📞জাতীয় জরুরি সেবা', '999'));
-    document.getElementById('police-call').addEventListener('click', () => makeCall('📞পুলিশ', '999'));
-    document.getElementById('fire-service').addEventListener('click', () => makeCall('📞ফায়ার সার্ভিস', '999'));
-    document.getElementById('ambulance-call').addEventListener('click', () => makeCall('📞অ্যাম্বুলেন্স', '1994-999999'));
-    document.getElementById('Women-Child-Helpline').addEventListener('click', () => makeCall('📞নারী ও শিশু সহায়তা', '109'));
-    document.getElementById('Anti-Corruption').addEventListener('click', () => makeCall('📞দুদক', '106'));
-    document.getElementById('Electricity').addEventListener('click', () => makeCall('📞 বিদ্যুৎ বিভ্রাট', '16216'));
-    document.getElementById('Brac').addEventListener('click', () => makeCall('📞 ব্র্যাক', '16445'));
-    document.getElementById('Bangladesh-Railway').addEventListener('click', () => makeCall('📞 বাংলাদেশ রেলওয়ে', '163'));
+    document.getElementById('emergency-call').addEventListener('click', () => makeCall('জাতীয় জরুরি সেবা', '999'));
+    document.getElementById('police-call').addEventListener('click', () => makeCall('পুলিশ', '999'));
+    document.getElementById('fire-service').addEventListener('click', () => makeCall('ফায়ার সার্ভিস', '999'));
+    document.getElementById('ambulance-call').addEventListener('click', () => makeCall('অ্যাম্বুলেন্স', '1994-999999'));
+    document.getElementById('Women-Child-Helpline').addEventListener('click', () => makeCall('নারী ও শিশু সহায়তা', '109'));
+    document.getElementById('Anti-Corruption').addEventListener('click', () => makeCall('দুদক', '106'));
+    document.getElementById('Electricity').addEventListener('click', () => makeCall(' বিদ্যুৎ বিভ্রাট', '16216'));
+    document.getElementById('Brac').addEventListener('click', () => makeCall(' ব্র্যাক', '16445'));
+    document.getElementById('Bangladesh-Railway').addEventListener('click', () => makeCall(' বাংলাদেশ রেলওয়ে', '163'));
 
     const copyButtons = document.querySelectorAll('button:has(.fa-copy)');
     copyButtons.forEach((button, index) => {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.addEventListener('click', () => toggleHeart(icon));
     });
     
-    const clearButton = document.querySelector('aside button:last-child ');
+    const clearButton = document.querySelector('aside button:last-child');
     clearButton.addEventListener('click', clearCallHistory);
     
     updateCoinDisplay();
